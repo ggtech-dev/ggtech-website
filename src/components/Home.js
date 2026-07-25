@@ -31,52 +31,86 @@ function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="services">
-        <h2>Our Services</h2>
-        <div className="services-grid">
-          <div className="service-card">
-            <h3>Consultation & Business Planning</h3>
-            <p>We help you select the ideal Freezone based on your business needs.</p>
-          </div>
-          <div className="service-card">
-            <h3>Company Registration</h3>
-            <p>Our experts handle documentation, approvals, and legal formalities.</p>
-          </div>
-          <div className="service-card">
-            <h3>Trade License Assistance</h3>
-            <p>We ensure you obtain the right business license for your industry.</p>
-          </div>
-          <div className="service-card">
-            <h3>Office & Workspace Solutions</h3>
-            <p>Choose from flexi-desks, offices, or warehouses.</p>
-          </div>
-          <div className="service-card">
-            <h3>Bank Account Opening Support</h3>
-            <p>Guidance on corporate bank account setup.</p>
-          </div>
-          <div className="service-card">
-            <h3>Visa & PRO Services</h3>
-            <p>Assistance with investor and employee visas.</p>
-          </div>
-          <div className="service-card">
-            <h3>Software Development</h3>
-            <p>Custom software solutions tailored to your business operations.</p>
-          </div>
-          <div className="service-card">
-            <h3>Website Design & Development</h3>
-            <p>Modern, responsive websites built to grow your online presence.</p>
-          </div>
-        </div>
-      </section>
+    <section id="services" className="services">
+  <h2>Our Services</h2>
+
+  <div className="services-grid">
+    <div className="service-card">
+      <h3>Website Design & Development</h3>
+      <p>
+        We create modern, responsive, and SEO-friendly websites that help businesses establish a strong online presence.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>Custom Software Development</h3>
+      <p>
+        We develop custom software solutions tailored to your business requirements, improving productivity and efficiency.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>Business Management Software</h3>
+      <p>
+        Complete ERP, CRM, inventory, billing, and employee management systems for small and medium businesses.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>E-Commerce Development</h3>
+      <p>
+        Build secure online stores with payment gateway integration, product management, and order tracking.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>Mobile App Development</h3>
+      <p>
+        Android and iOS applications designed to help businesses connect with customers anytime, anywhere.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>Cloud & Web Application Development</h3>
+      <p>
+        Scalable web applications using modern technologies for startups and growing enterprises.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>Software Maintenance & Support</h3>
+      <p>
+        We provide regular updates, bug fixes, performance improvements, and technical support after deployment.
+      </p>
+    </div>
+
+    <div className="service-card">
+      <h3>IT Consulting & Digital Solutions</h3>
+      <p>
+        Expert guidance to help businesses choose the right technology and digital solutions for long-term growth.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
-      <section className="contact">
-        <h2>Contact Us</h2>
-        <div className="contact-details">
-          <p><strong>Phone:</strong> 052 479 8397</p>
-          <p><strong>Location:</strong> Sharaf DG, Apple Building, 7th Floor, Office 703, Plot 7</p>
-        </div>
-      </section>
+<section className="contact">
+  <h2>Contact Us</h2>
+
+  <div className="contact-details">
+    <p><strong>📞 Phone:</strong> +91 85426 XXXXX</p>
+
+    <p>
+      <strong>📍 Office:</strong> Hyderabad (Coming Soon)
+    </p>
+
+    <p>
+      <strong>🌆 Expanding To:</strong> Mumbai (Coming Soon), Bangalore (Coming Soon)
+    </p>
+
+    <p><strong>✉️ Email:</strong> info@ggtechnologies.in</p>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="footer">
