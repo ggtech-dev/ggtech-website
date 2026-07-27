@@ -25,7 +25,7 @@ function Home() {
         <h2>Who We Are</h2>
         <p>
           GGTech is a software services and website development company, also
-          specializing in complete business setup solutions across the UAE.
+          specializing in complete business setup solutions across the INDIA.
           We combine technology expertise with business consultancy to help
           companies launch, build, and grow with confidence.
         </p>
