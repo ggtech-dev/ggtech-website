@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import servicesData from '../data/servicesData';
 import './Home.css';
 
 function Home() {
@@ -31,86 +32,29 @@ function Home() {
       </section>
 
       {/* Services Section */}
-    <section id="services" className="services">
-  <h2>Our Services</h2>
+      <section id="services" className="services">
+        <h2>Our Services</h2>
 
-  <div className="services-grid">
-    <div className="service-card">
-      <h3>Website Design & Development</h3>
-      <p>
-        We create modern, responsive, and SEO-friendly websites that help businesses establish a strong online presence.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>Custom Software Development</h3>
-      <p>
-        We develop custom software solutions tailored to your business requirements, improving productivity and efficiency.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>Business Management Software</h3>
-      <p>
-        Complete ERP, CRM, inventory, billing, and employee management systems for small and medium businesses.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>E-Commerce Development</h3>
-      <p>
-        Build secure online stores with payment gateway integration, product management, and order tracking.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>Mobile App Development</h3>
-      <p>
-        Android and iOS applications designed to help businesses connect with customers anytime, anywhere.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>Cloud & Web Application Development</h3>
-      <p>
-        Scalable web applications using modern technologies for startups and growing enterprises.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>Software Maintenance & Support</h3>
-      <p>
-        We provide regular updates, bug fixes, performance improvements, and technical support after deployment.
-      </p>
-    </div>
-
-    <div className="service-card">
-      <h3>IT Consulting & Digital Solutions</h3>
-      <p>
-        Expert guidance to help businesses choose the right technology and digital solutions for long-term growth.
-      </p>
-    </div>
-  </div>
-</section>
+        <div className="services-grid">
+          {servicesData.map((service) => (
+            <Link to={`/service/${service.id}`} key={service.id} className="service-card">
+              <h3>{service.title}</h3>
+              <p>{service.shortDesc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Contact Section */}
-<section className="contact">
-  <h2>Contact Us</h2>
-
-  <div className="contact-details">
-    <p><strong>📞 Phone:</strong> +91 85426 XXXXX</p>
-
-    <p>
-      <strong>📍 Office:</strong> Hyderabad (Coming Soon)
-    </p>
-
-    <p>
-      <strong>🌆 Expanding To:</strong> Mumbai (Coming Soon), Bangalore (Coming Soon)
-    </p>
-
-    <p><strong>✉️ Email:</strong> info@ggtechnologies.in</p>
-  </div>
-</section>
+      <section className="contact">
+        <h2>Contact Us</h2>
+        <div className="contact-details">
+          <p><strong>📞 Phone:</strong> +91 85426 XXXXX</p>
+          <p><strong>📍 Office:</strong> Hyderabad (Coming Soon)</p>
+          <p><strong>🌆 Expanding To:</strong> Mumbai (Coming Soon), Bangalore (Coming Soon)</p>
+          <p><strong>✉️ Email:</strong> info@ggtechnologies.in</p>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="footer">
