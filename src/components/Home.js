@@ -10,7 +10,7 @@ function Home() {
       <header className="hero">
         <nav className="navbar">
           <h2 className="logo">GGTech</h2>
-          <Link to="/login" className="login-btn">Login</Link>
+         <Link to="/login" className="login-btn">👤 Admin Login</Link>
         </nav>
 
         <div className="hero-content">
