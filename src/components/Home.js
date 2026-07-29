@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import servicesData from '../data/servicesData';
 import './Home.css';
 
 function Home() {
+  const [greeting, setGreeting] = useState('');
+
+  useEffect(() => {
+    fetch('/api/greet')
+      .then((res) => res.json())
+      .then((data) => setGreeting(data.message))
+      .catch((err) => console.error('Error fetching greeting:', err));
+  }, []);
+
   return (
     <div className="home-container">
       {/* Hero Section */}
       <header className="hero">
         <nav className="navbar">
           <h2 className="logo">GGTech</h2>
-         <Link to="/login" className="login-btn">👤 Admin Login</Link>
+          <Link to="/login" className="login-btn">👤 Admin Login</Link>
         </nav>
 
         <div className="hero-content">
           <h1>GGTech Software Solutions</h1>
+          {greeting && <p className="greeting-banner">{greeting}</p>}
           <p>Software Development & Website Design Company — Building Your Digital Future</p>
           <a href="#services" className="cta-btn">Explore Services</a>
         </div>
