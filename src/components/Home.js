@@ -24,7 +24,7 @@ function Home() {
 
         <div className="hero-content">
           <h1>GGTech Software Solutions</h1>
-          <p style={{color: '#4a90e2', fontWeight: 'bold'}}>🚀 Deployed </p>
+          <p style={{color: '#4a90e2', fontWeight: 'bold'}}>🚀 Hello </p>
           {greeting && <p className="greeting-banner">{greeting}</p>}
           <p>Software Development & Website Design Company — Building Your Digital Future</p>
           <a href="#services" className="cta-btn">Explore Services</a>
